@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline using Jenkins</title>
     <style>
-	    body{
-		 display:flex;
-		justify-content:center;	
-		background:cyan;
-		align-items:center;
-	    }
-	.container{
-		display:flex;
-		justify-content:center;	
-		/* flex-direction:column; */
-		align-items:center;
-		height: 500px;
-		width: 500px;
-		gap: 20px;
-	}	
-	button{
-		height: 100px;
-		width: 100px;
-		background: red;
-	}
-  </style>
-  <title>CI/CD Rahul APP devops 2026 </title>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 40px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .stage {
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 8px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            width: 200px;
+            text-align: center;
+        }
+        .code { background-color: #3498db; }
+        .build { background-color: #2ecc71; }
+        .test { background-color: #f1c40f; }
+        .deploy { background-color: #e74c3c; }
+        .arrow {
+            font-size: 30px;
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-<div class ="container">
-	<button>CI</button>
-	<button>CD</button>
-</div>
-	
-  
+    <h1>CI/CD Pipeline using Jenkins</h1>
+    <div class="container">
+        <div class="stage code">Code</div>
+        <div class="arrow">↓</div>
+        <div class="stage build">Build</div>
+        <div class="arrow">↓</div>
+        <div class="stage test">Test</div>
+        <div class="arrow">↓</div>
+        <div class="stage deploy">Deploy</div>
+    </div>
 </body>
 </html>
